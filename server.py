@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+Wrapper for PyICU word segmentation
+https://github.com/ovalhub/pyicu/blob/master/samples/break.py
+https://github.com/danhhong/khmer_segment/blob/main/khmer_segment_icu.py
+"""
 import re
 from typing import List
 
