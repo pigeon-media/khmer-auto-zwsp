@@ -7,7 +7,8 @@ https://github.com/danhhong/khmer_segment/blob/main/khmer_segment_icu.py
 import re
 from typing import List
 
-from flask.wrappers import Response
+from waitress import serve
+
 from icu import BreakIterator, Locale 
 from flask import Flask, request, jsonify
 
@@ -33,5 +34,4 @@ def hello_world():
     data = request.json['data']
     return {'data': khm_segment(data) }
 
-if __name__ == '__main__':
-  app.run(debug=False)
+serve(app, port=5000)

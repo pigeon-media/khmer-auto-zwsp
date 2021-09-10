@@ -4,10 +4,11 @@ RUN apt-get update
 
 RUN apt-get install python3-icu
 
-
 RUN pip install --no-binary=:pyicu: pyicu
 
-RUN pip install Flask
+COPY ./requirements.txt .
+
+RUN pip3 install -r requirements.txt
 
 WORKDIR /usr/src/app
 
@@ -15,5 +16,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "python", "server.py" ]
-
+CMD ["waitress-serve", "--call", "server:create_app"]

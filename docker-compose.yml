@@ -1,0 +1,6 @@
+version: '3'
+services:
+  app:
+    image: ghcr.io/pigeon-media/khmer-auto-zwsp:latest
+    ports: 
+      - "127.0.0.1:5000:5000"
