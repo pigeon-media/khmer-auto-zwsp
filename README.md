@@ -6,6 +6,11 @@ Credits to [danhhong/khmer_segment](https://github.com/danhhong/khmer_segment)
 
 ### Usage
 
+
+```bash
+docker compose up -d
+```
+
 The server will be running on `http://localhost:5000`
 
 #### Request
