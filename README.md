@@ -24,6 +24,8 @@ The server will be running on `http://localhost:5000`
 
 ```json
 {
-  "data": "កូនខ្មែរ​គឺជា​មនុស្ស​ខ្មែរ"
+  "data": "កូនខ្មែរ<>គឺជា<>មនុស្ស<>ខ្មែរ"
 }
 ```
+
+> `<>` is used to indicate the ZWSP
